@@ -6,7 +6,7 @@
     "start": "./node_modules/.bin/gulp serve",
     "postinstall": "if $BUILD_ASSETS; then npm run heroku-deploy; fi",
     "prepublish": "npm run build",
-    "heroku-deploy": "npm run build",
+    "heroku-deploy": "ENV=production gulp build",
     "build": "ENV=production node ./node_modules/gulp/bin/gulp.js build"
   },
   "author": "",
