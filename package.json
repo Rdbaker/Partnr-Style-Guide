@@ -4,7 +4,9 @@
   "description": "Partnr's style for web components",
   "scripts": {
     "start": "./node_modules/.bin/gulp serve",
-    "prepublish": "ENV=production ./node_modules/.bin/gulp build"
+    "postinstall": "if $BUILD_ASSETS; then npm run build-assets; fi",
+    "prepublish": "ENV=production ./node_modules/.bin/gulp build",
+    "build-assets": "npm install && npm run prepublish"
   },
   "author": "",
   "license": "MIT",
