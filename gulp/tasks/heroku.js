@@ -4,7 +4,7 @@ var serve = require('gulp-serve');
 
 gulp.task('heroku:production', function() {
   serve({
-    root: ['static/style-guide/index.html'],
+    root: ['static/shared', 'static/style-guide'],
     port: process.env.PORT || 9090
   });
 });
