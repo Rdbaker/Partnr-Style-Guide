@@ -11,8 +11,7 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "bootstrap": "^3.3.6",
     "fontawesome": "^4.5.0",
@@ -21,6 +20,7 @@
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.2.0",
+    "gulp-serve": "^1.2.0",
     "require-dir": "^0.3.0"
   }
 }
