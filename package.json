@@ -17,6 +17,7 @@
     "fontawesome": "^4.5.0",
     "gulp": "^3.9.1",
     "gulp-coffee": "^2.3.2",
+    "gulp-connect": "^3.2.2",
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.2.0",
