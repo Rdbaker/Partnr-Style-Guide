@@ -6,7 +6,7 @@ gulp.task('heroku:production', function() {
   serve({
     root: ['static/shared', 'static/style-guide'],
     port: process.env.PORT || 9090,
-    fallback: 'static/style-guide/index.html'
+    fallback: 'static/style-guide/index.html',
     livereload: false
   });
 });
