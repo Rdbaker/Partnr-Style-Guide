@@ -7,7 +7,7 @@
     "postinstall": "if $BUILD_ASSETS; then npm run heroku-deploy; fi",
     "prepublish": "npm run build",
     "heroku-deploy": "npm run build",
-    "build": "ENV=production ./node_modules/.bin/gulp build"
+    "build": "ENV=production node ./node_modules/gulp/bin/gulp.js build"
   },
   "author": "",
   "license": "MIT",
