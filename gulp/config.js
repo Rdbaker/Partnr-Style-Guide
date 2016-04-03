@@ -9,8 +9,8 @@ module.exports = {
   env: env,
 
   sass: {
-    src: [src+'**/*.sass'],
-    dest: dest+'css/',
+    src: [src + 'sass/**/*.sass'],
+    dest: dest + 'css/',
     settings: {
       includePaths: [
         src,
@@ -25,7 +25,14 @@ module.exports = {
   },
 
   coffee: {
-    src: src + '**/*.coffee',
-    dest: dest
+    src: src + 'coffee/**/*.coffee',
+    dest: dest + 'js/'
+  },
+
+  server: {
+    root: ['static'],
+    port: process.env.PORT || 9090,
+    fallback: 'static/style-guide/index.html',
+    livereload: false
   }
 };
