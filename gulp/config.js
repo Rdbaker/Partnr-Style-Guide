@@ -30,7 +30,7 @@ module.exports = {
   },
 
   server: {
-    root: ['static'],
+    root: ['static', 'src/style-guide'],
     port: process.env.PORT || 9090,
     fallback: 'static/style-guide/index.html',
     livereload: false

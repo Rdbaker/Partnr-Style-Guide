@@ -4,6 +4,6 @@ var config = require('../config.js').sass;
 
 gulp.task('sass', function() {
   gulp.src(config.src)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass(config.settings).on('error', sass.logError))
     .pipe(gulp.dest(config.dest));
 });

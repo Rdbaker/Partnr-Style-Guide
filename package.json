@@ -1,6 +1,6 @@
 {
   "name": "partnr-style-guide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Partnr's style for web components",
   "scripts": {
     "start": "./node_modules/.bin/gulp heroku:production",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-coffee": "^2.3.2",
+    "gulp-coffeeify": "^0.1.8",
     "gulp-connect": "^3.2.2",
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "fontawesome": "^4.5.0"
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.2"
   }
 }
