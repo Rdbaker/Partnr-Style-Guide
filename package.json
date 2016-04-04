@@ -4,9 +4,7 @@
   "description": "Partnr's style for web components",
   "scripts": {
     "start": "./node_modules/.bin/gulp heroku:production",
-    "postinstall": "if [[ $BUILD_ASSETS == \"true\" ]]; then npm run heroku-deploy; fi",
     "prepublish": "npm run build",
-    "heroku-deploy": "ENV=production gulp build",
     "build": "ENV=production node ./node_modules/gulp/bin/gulp.js build"
   },
   "author": "Ryan Baker",
