@@ -6,14 +6,23 @@ body
     div.row
       img.img-responsive(src="img/logo.png")
   div.row
-    nav.col-xs-3.bs-docs-sidebar
-      ul.nav.nav-stacked.docs-fixed
-        li
-          a(href="#project-tile") Project Tiles
+    div.col-xs-3.bs-docs-sidebar
+      nav(data-spy="affix", data-offset-top="400")
+        ul.nav.nav-stacked
+          li
+            a(href="#project-tile") Project Tiles
+          li
+            a(href="#activity-feed") Activity Feed
 
     div.col-xs-9.bs
-      section.group#project-tile
-        h3 Project Tiles
+      div.pn-docs-section.container
+        h1.page-header.group#project-tile Project Tiles
         include ./components/project-tile.jade
+
+      div.pn-docs-section.container
+        h1.page-header.group#activity-feed Activity Feed
+        div.docs-example.docs-example-activity-feed
+          include ./components/activity-feed.jade
+
 
   script(src="/js/test.js")
