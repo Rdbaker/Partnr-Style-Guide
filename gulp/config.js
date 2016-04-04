@@ -9,7 +9,7 @@ module.exports = {
   env: env,
 
   sass: {
-    src: [src + 'sass/**/*.sass'],
+    src: [src + 'sass/**/*.sass', src + 'style-guide/**/*.sass'],
     dest: dest + 'css/',
     settings: {
       includePaths: [

@@ -1,6 +1,6 @@
 head
   title Partnr Style Guide
-  link(rel="stylesheet", href="/css/test.css")
+  link(rel="stylesheet", href="/css/docs.css")
 body
   div.container-fluid
     div.row
@@ -22,6 +22,8 @@ body
               a(href="#groupbsub1") Sub-Group1
             li
               a(href="#groupbsub2") Sub-Group2
+        li
+          a(href="#project-tile") Project Tile
 
     div.col-xs-9.bs
       section.group#groupa
@@ -36,11 +38,8 @@ body
           h4 Group B Sub 1
         div.subgroup#groupbsub2
           h4 Group B Sub 2
-      section.group#groupc
-        h3 Group C
-        div.subgroup#GroupCSub1
-          h4 Group C Sub 1
-        div.subgroup#GroupCSub2
-          h4 Group C Sub 2
+      section.group#project-tile
+        h3 Project Tiles
+        include ./components/project-tile.jade
 
   script(src="/js/test.js")
