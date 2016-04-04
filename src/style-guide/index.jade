@@ -7,37 +7,11 @@ body
       img.img-responsive(src="img/logo.png")
   div.row
     nav.col-xs-3.bs-docs-sidebar
-      ul.nav.nav-stacked.fixed
+      ul.nav.nav-stacked.docs-fixed
         li
-          a(href="#groupa") Group A
-          ul.nav.nav-stacked
-            li
-              a(href="#groupasub1") Sub-Group1
-            li
-              a(href="#groupasub2") Sub-Group2
-        li
-          a(href="#groupb") Group B
-          ul.nav.nav-stacked
-            li
-              a(href="#groupbsub1") Sub-Group1
-            li
-              a(href="#groupbsub2") Sub-Group2
-        li
-          a(href="#project-tile") Project Tile
+          a(href="#project-tile") Project Tiles
 
     div.col-xs-9.bs
-      section.group#groupa
-        h3 Group A
-        div.subgroup#groupasub1
-          h4 Group A Sub 1
-        div.subgroup#groupasub2
-          h4 Group A Sub 2
-      section.group#groupb
-        h3 Group B
-        div.subgroup#groupbsub1
-          h4 Group B Sub 1
-        div.subgroup#groupbsub2
-          h4 Group B Sub 2
       section.group#project-tile
         h3 Project Tiles
         include ./components/project-tile.jade

@@ -30,7 +30,7 @@ module.exports = {
   },
 
   server: {
-    root: ['static', 'src/style-guide'],
+    root: ['static', 'src/style-guide', 'node_modules/font-awesome'],
     port: process.env.PORT || 9090,
     fallback: 'static/style-guide/index.html',
     livereload: false
