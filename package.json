@@ -9,7 +9,7 @@
     "heroku-deploy": "ENV=production gulp build",
     "build": "ENV=production node ./node_modules/gulp/bin/gulp.js build"
   },
-  "author": "",
+  "author": "Ryan Baker",
   "license": "MIT",
   "devDependencies": {
   },
