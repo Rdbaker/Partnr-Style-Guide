@@ -1,5 +1,5 @@
 window.$  = window.jQuery = require('jquery')
-require('bootstrap')
+require('bootstrap-sass')
 
 $('body').scrollspy({ target: '.bs-docs-sidebar' })
 
