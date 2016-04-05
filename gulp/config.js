@@ -20,7 +20,7 @@ module.exports = {
   },
 
   jade: {
-    src: src + '**/*.jade',
+    src: src + '/style-guide/**/*.jade',
     dest: dest
   },
 

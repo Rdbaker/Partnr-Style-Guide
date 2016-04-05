@@ -1,6 +1,18 @@
+@import 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons'
 @import '../variables/colors'
 
 .pn__btn-primary
-  @extend .btn-primary
-  background-color: $pn__accent-color
-  border-color: $pn__accent-border
+  @include button-variant(white, $pn__accent-color, $pn__accent-border)
+
+.pn__btn-warning
+  @include button-variant(white, $pn__warning-yellow, $pn__warning-yellow-border)
+
+.pn__btn-danger,
+.pn__btn-error
+  @include button-variant(white, $pn__error-red, $pn__error-red-border)
+
+.pn__btn-success
+  @include button-variant(white, $pn__success-green, $pn__success-green-border)
+
+.pn__btn-info
+  @include button-variant(white, $pn__secondary-blue, $pn__secondary-blue-border)

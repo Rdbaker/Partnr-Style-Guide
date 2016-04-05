@@ -1,6 +1,6 @@
 {
   "name": "partnr-style-guide",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Partnr's style for web components",
   "scripts": {
     "start": "./node_modules/.bin/gulp heroku:production",
@@ -19,7 +19,7 @@
     "require-dir": "^0.3.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
     "font-awesome": "^4.5.0",
     "jquery": "^2.2.2"
   }

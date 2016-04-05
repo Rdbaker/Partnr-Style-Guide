@@ -10,14 +10,25 @@ body
       nav(data-spy="affix", data-offset-top="400")
         ul.nav.nav-stacked
           li
+            a(href="#buttons") Buttons
+          li
             a(href="#project-tile") Project Tiles
           li
             a(href="#activity-feed") Activity Feed
 
-    div.col-xs-9.bs
+    div.col-xs-9
+      div.pn-docs-section.container
+        h1.page-header.group#buttons Buttons
+        h2 Bootstrap Buttons
+        span.text-muted These are buttons that come out of the box by default, skinned with Partnr colors
+        div.docs-example.docs-example-bootstrap-buttons
+          include ./components/buttons/standard.jade
+
       div.pn-docs-section.container
         h1.page-header.group#project-tile Project Tiles
-        include ./components/project-tile.jade
+        span.text-muted These tiles are found in the search &amp; explore sections of Partnr
+        div.docs-example.docs-example-project-tile
+          include ./components/project-tile.jade
 
       div.pn-docs-section.container
         h1.page-header.group#activity-feed Activity Feed
