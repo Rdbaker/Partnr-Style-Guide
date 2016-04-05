@@ -9,8 +9,5 @@ gulp.task('coffee', function() {
         debug : true,
       }
     }))
-    .pipe(gulp.dest(config.dest));/*
-  gulp.src(config.src)
-    .pipe(coffee(config.options).on('error', function(msg) {console.log('something went wrong', msg);}))
-    .pipe(gulp.dest(config.dest));*/
+    .pipe(gulp.dest(config.dest));
 });
