@@ -1,5 +1,7 @@
 @import '../sass/partnr-style'
 
+$indent_size: 15px
+
 img.img-responsive
   -webkit-background-size: cover
   -moz-background-size: cover
@@ -8,16 +10,38 @@ img.img-responsive
   width: 100%
 
 .pn-docs-section
-  margin-bottom: 60px
+  margin-bottom: $indent_size * 4
+
+.pn-docs-subsection
+  margin-bottom: $indent_size * 4
+  margin-left: $indent_size
+
+.pn-docs-example
+  margin-bottom: $indent_size * 4
+  margin-left: $indent_size
+
+.pn-docs-example-header
+  margin-bottom: 20px
+  padding-top: 20px
+
+.pn-docs-subsection-header
+  margin-bottom: 20px
+  border-bottom: 1px solid #eeeeee
+
+.pn-docs-section-header
+  margin-bottom: 20px
 
 div.bs-docs-sidebar>nav
   top: 20px
 
 .docs-example
-  margin-top: 30px
+  margin-top: $indent_size * 2
 
-.std-btn-group > button
-  margin: 5px
+.docs-example-activity-feed
+  margin-left: $indent_size * 2
+
+.docs-btn-group > button
+  margin: $indent_size/3
 
 h1[id]
   padding-top: 20px

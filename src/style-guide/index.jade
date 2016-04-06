@@ -16,25 +16,85 @@ body
               a(href="#project-tile") Project Tiles
             li
               a(href="#activity-feed") Activity Feed
+            li
+              a(href="#connection-request") Connection Request
+
 
       div.col-xs-9
         div.pn-docs-section.container-fluid
-          h1.page-header.group#buttons Buttons
-          h2 Bootstrap Buttons
-          span.text-muted These are buttons that come out of the box by default, skinned with Partnr colors
-          div.docs-example.docs-example-bootstrap-buttons
-            include ./components/buttons/standard.jade
+          div.pn-docs-section-header
+            h1.page-header.group#buttons Buttons
+
+
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Bootstrap Buttons
+              span.text-muted These are buttons that come out of the box by default, skinned with Partnr colors
+            div.pn-docs-example.docs-example-bootstrap-buttons
+              include ./components/buttons/standard.jade
+
+
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Partnr Domain Specific Buttons
+              span.text-muted These are buttons that we use specifically for our application, you won't find these in other places
+
+            div.pn-docs-example.docs-example-bootstrap-buttons
+              div.pn-docs-example
+                div.pn-docs-example-header
+                  h3 Connection Request Buttons
+                  span.text-muted These buttons are used for connection requests in the application (click them to see how they work)
+                include ./components/buttons/conreq.jade
+
+              div.pn-docs-example
+                div.pn-docs-example-header
+                  h3 Connection Request Buttons (condensed)
+                  span.text-muted These buttons are used when there isn't enough space on the screen to display the full text action
+                include ./components/buttons/conreq-condensed.jade
+
+
 
         div.pn-docs-section.container-fluid
-          h1.page-header.group#project-tile Project Tiles
-          span.text-muted These tiles are found in the search &amp; explore sections of Partnr
-          div.docs-example.docs-example-project-tile
+          div.pn-docs-section-header
+            h1.page-header.group#project-tile Project Tiles
+            span.text-muted These tiles are found in the search &amp; explore sections of Partnr
+
+          div.pn-docs-example.docs-example-project-tile
             include ./components/project-tile.jade
 
+
+
         div.pn-docs-section.container-fluid
-          h1.page-header.group#activity-feed Activity Feed
-          div.docs-example.docs-example-activity-feed
+          div.pn-docs-section-header
+            h1.page-header.group#activity-feed Activity Feed
+
+          div.pn-docs-example.docs-example-activity-feed
             include ./components/activity-feed.jade
+
+
+
+        div.pn-docs-section.container-fluid
+          div.pn-docs-section-header
+            h1.page-header.group#connection-request Connection Request
+
+
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Connection Request Buttons
+              span.text-muted These buttons are used to respond to a connection request
+
+            div.pn-docs-example.docs-example-bootstrap-buttons
+              include ./components/buttons/conreq-card.jade
+
+
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Connection Request Card
+              span.text-muted This is the component that the user will see when they receive a connection request
+
+            div.pn-docs-example.docs-example-connection-request
+              include ./components/connection-request.jade
+
 
 
   script(src="/js/test.js")

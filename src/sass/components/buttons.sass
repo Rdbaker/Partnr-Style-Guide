@@ -1,5 +1,6 @@
 @import 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons'
 @import '../variables/colors'
+@import '../mixins'
 
 .pn__btn-primary
   @include button-variant(white, $pn__accent-color, $pn__accent-border)
@@ -16,3 +17,42 @@
 
 .pn__btn-info
   @include button-variant(white, $pn__secondary-blue, $pn__secondary-blue-border)
+
+.pn__conreq-btn-connect
+  @extend .pn__btn-success
+  &:before
+    @include icon(plus)
+    margin-left: -3px
+
+.pn__conreq-btn-connected
+  @extend .pn__btn-info
+  &:before
+    @include icon(check)
+
+.pn__conreq-btn-requested
+  @extend .pn__btn-warning
+  &:before
+    @include icon(arrow-right)
+
+.pn__conreq-btn-respond
+  @extend .pn__btn-primary
+  &:before
+    @include icon(envelope-o)
+
+.pn__conreq-accept
+  @extend .pn__btn-success
+  &:before
+    @include icon(check-square-o)
+
+.pn__conreq-decline
+  @extend .pn__btn-danger
+  &:before
+    @include icon(times)
+
+.pn__conreq-btn-group-popover
+  text-align: center
+
+  .btn
+    margin: 5px
+    margin-left: 10px
+    margin-right: 10px

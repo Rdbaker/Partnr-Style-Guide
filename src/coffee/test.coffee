@@ -5,3 +5,4 @@ $('body').scrollspy({ target: '.bs-docs-sidebar' })
 
 $ ->
   $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="popover"]').popover()
