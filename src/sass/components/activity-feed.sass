@@ -1,0 +1,38 @@
+@import '../mixins'
+@import '../variables/colors'
+
+.pn__activity-feed
+  div
+    .pn__activity-user,
+    .pn__activity-text
+      @extend .vcenter-row
+      @extend .equal-height-cols
+      padding-top: 5px
+      padding-bottom: 5px
+      cursor: pointer
+
+    .pn__activity-user
+      @extend .ellipsis-overflow-row
+      background-color: $pn__primary-bg
+      border-bottom-left-radius: 5px
+      border-top-left-radius: 5px
+      border-left: 1px solid
+      border-top: 1px solid
+      border-bottom: 1px solid
+      border-color: darken($pn__primary-bg, 5%)
+
+      &:hover
+        background-color: darken($pn__primary-bg, 5%)
+
+
+    .pn__activity-text
+      background-color: $pn__secondary-bg
+      border-bottom-right-radius: 5px
+      border-top-right-radius: 5px
+      border-left: 1px solid
+      border-top: 1px solid
+      border-bottom: 1px solid
+      border-color: darken($pn__secondary-bg, 5%)
+
+      &:hover
+        background-color: darken($pn__secondary-bg, 5%)
