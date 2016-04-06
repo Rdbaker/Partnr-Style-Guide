@@ -20,32 +20,38 @@
 
 .pn__conreq-btn-connect
   @extend .pn__btn-success
+  min-width: 40px
   &:before
     @include icon(plus)
     margin-left: -3px
 
 .pn__conreq-btn-connected
   @extend .pn__btn-info
+  min-width: 40px
   &:before
     @include icon(check)
 
 .pn__conreq-btn-requested
   @extend .pn__btn-warning
+  min-width: 40px
   &:before
     @include icon(arrow-right)
 
 .pn__conreq-btn-respond
   @extend .pn__btn-primary
+  min-width: 40px
   &:before
     @include icon(envelope-o)
 
 .pn__conreq-accept
   @extend .pn__btn-success
+  min-width: 40px
   &:before
-    @include icon(check-square-o)
+    @include icon(check)
 
 .pn__conreq-decline
   @extend .pn__btn-danger
+  min-width: 40px
   &:before
     @include icon(times)
 
