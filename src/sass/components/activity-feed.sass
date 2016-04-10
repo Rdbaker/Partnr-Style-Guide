@@ -2,38 +2,51 @@
 @import '../variables/colors'
 
 .pn__activity-feed
-  div
+  position: relative
+  padding: 2em 0
+  margin-top: 2em
+  margin-bottom: 2em
+
+  &::before
+    /* this is the vertical line */
+    content: ''
+    position: absolute
+    top: 0
+    left: 66px
+    height: 100%
+    width: 4px
+    background: #d7e4ed
+    z-index: -1
+
+  .pn__activity-block
+    margin-bottom: 50px
+
     .pn__activity-user,
+    .pn__activity-date,
     .pn__activity-text
       @extend .vcenter-row
-      @extend .equal-height-cols
       padding-top: 5px
       padding-bottom: 5px
-      cursor: pointer
-      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.22)
+      padding-left: 3px
+      padding-right: 3px
+      display: inline
+
+      .pn__activity-username,
+      .pn__activity-content
+        display: inline
+        &::before
+          content: "   "
 
     .pn__activity-user
       @extend .ellipsis-overflow-row
-      background-color: $pn__primary-bg
-      border-bottom-left-radius: 5px
-      border-top-left-radius: 5px
-      border-left: 1px solid
-      border-top: 1px solid
-      border-bottom: 1px solid
-      border-color: $pn__default-border-color
-
-      &:hover
-        background-color: darken($pn__primary-bg, 5%)
-
 
     .pn__activity-text
-      background-color: $pn__secondary-bg
-      border-bottom-right-radius: 5px
-      border-top-right-radius: 5px
-      border-right: 1px solid
-      border-top: 1px solid
-      border-bottom: 1px solid
-      border-color: $pn__default-border-color
+      @extend .ellipsis-overflow-row
 
-      &:hover
-        background-color: darken($pn__secondary-bg, 5%)
+    .pn__img-partnr
+      background: none
+      border: none
+
+  .pn__activity-date
+    min-width: 50px
+    max-width: 53px
