@@ -1,24 +1,17 @@
 @import '../variables/colors'
+@import '../classes/card'
 
 .pn__conreq
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.22)
-  max-width: 700px
+  @extend .pn__ui-card
+  background-color: $pn__secondary-bg
 
   .pn__conreq-user,
   .pn__conreq-msg,
   .pn__conreq-action
     @extend .vcenter-row
     @extend .equal-height-cols
-    background-color: $pn__secondary-bg
-    border-top: 1px solid $pn__default-border-color
-    border-bottom: 1px solid $pn__default-border-color
-    &:hover
-      background-color: darken($pn__secondary-bg, 5%)
 
   .pn__conreq-user
-    border-bottom-left-radius: 3px
-    border-top-left-radius: 3px
-    border-left: 1px solid $pn__default-border-color
     text-align: center
     max-width: 100px
 
@@ -37,9 +30,6 @@
       padding-bottom: 7px
 
   .pn__conreq-action
-    border-bottom-right-radius: 3px
-    border-top-right-radius: 3px
-    border-right: 1px solid $pn__default-border-color
 
     .btn
       display: block

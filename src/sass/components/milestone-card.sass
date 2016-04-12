@@ -1,0 +1,37 @@
+@import 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/gradients'
+@import 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/progress-bar'
+@import 'bootstrap-sass/assets/stylesheets/bootstrap/mixins/vendor-prefixes'
+@import 'bootstrap-sass/assets/stylesheets/bootstrap/variables'
+@import 'bootstrap-sass/assets/stylesheets/bootstrap/progress-bars'
+@import '../variables/partnr'
+@import '../classes/card'
+@import '../mixins'
+
+.pn__milestone-card
+  @extend .pn__ui-card
+
+  .pn__milestone-card-title
+    font-weight: 500
+    font-size: $pn__font-lg
+  .pn__milestone-card-progress
+    @extend .progress
+  .pn__milestone-due
+    &::before
+      content: "Due Date: "
+      font-weight: 500
+  .pn__milestone-task-count
+    float: right
+    color: #999999
+    cursor: pointer
+    font-size: 18px
+    &:hover,
+    &:hover:after
+      text-decoration: none
+      color: #777
+    &:after
+      @include icon(tasks)
+      margin-left: 4px
+
+  .pn__milestone-due,
+  .pn__milestone-task-count
+    display: inline

@@ -97,4 +97,26 @@ body
 
 
 
+        div.pn-docs-section.container-fluid
+          div.pn-docs-section-header
+            h1.page-header.group#progress-cards Project Progress Cards
+            
+            
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Milestone Card
+              span.text-muted This is the card that will be displayed for a project's milestones
+
+            div.pn-docs-example.docs-example-milestone-card
+              include ./components/milestone-card.jade
+
+
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Task Card
+              span.text-muted This is the card that will be displayed for a project's tasks
+
+            div.pn-docs-example.docs-example-task-card
+              include ./components/task-card.jade
+
   script(src="/js/test.js")
