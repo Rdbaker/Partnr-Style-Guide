@@ -16,9 +16,10 @@
   .pn__milestone-card-progress
     @extend .progress
   .pn__milestone-due
+    color: #777
     &::before
-      content: "Due Date: "
-      font-weight: 500
+      @include icon(calendar)
+      margin-right: 4px
   .pn__milestone-task-count
     float: right
     color: #999999
@@ -33,5 +34,13 @@
       margin-left: 4px
 
   .pn__milestone-due,
-  .pn__milestone-task-count
+  .pn__milestone-task-count,
+  .pn__milestone-card-title,
+  .pn__edit-btn
     display: inline
+
+  .pn__milestone-card-title-group
+    margin-bottom: 20px
+
+    .pn__edit-btn
+      float: right
