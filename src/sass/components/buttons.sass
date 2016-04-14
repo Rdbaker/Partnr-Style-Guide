@@ -4,19 +4,30 @@
 
 .pn__btn-primary
   @include button-variant(white, $pn__accent-color, $pn__accent-border)
+  @extend .btn
 
 .pn__btn-warning
   @include button-variant(white, $pn__warning-yellow, $pn__warning-yellow-border)
+  @extend .btn
 
 .pn__btn-danger,
 .pn__btn-error
   @include button-variant(white, $pn__error-red, $pn__error-red-border)
+  @extend .btn
 
 .pn__btn-success
   @include button-variant(white, $pn__success-green, $pn__success-green-border)
+  @extend .btn
 
 .pn__btn-info
   @include button-variant(white, $pn__secondary-blue, $pn__secondary-blue-border)
+  @extend .btn
+
+.pn__skill-btn
+  @include button-variant(white, $pn__highlight-blue, darken($pn__highlight-blue, 10%))
+  @extend .btn
+  @extend .btn-sm
+
 
 .pn__conreq-btn-connect
   @extend .pn__btn-success
@@ -54,6 +65,13 @@
   min-width: 40px
   &:before
     @include icon(times)
+
+.pn__edit-btn
+  @extend .pn__btn-primary
+  min-width: 40px
+  font-size: 16px
+  &:before
+    @include icon(pencil)
 
 .pn__conreq-btn-group-popover
   text-align: center

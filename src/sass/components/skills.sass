@@ -1,0 +1,17 @@
+@import "../mixins"
+@import "../variables/partnr"
+@import "buttons"
+
+.pn__skills-container
+  margin-top: 8px
+  margin-bottom: 8px
+
+  .pn__skill-tag
+    @extend .pn__skill-btn
+    margin: 3px
+    display: inline-block
+    border-top-left-radius: 50px
+    border-bottom-left-radius: 50px
+    &::before
+      @include icon(circle)
+      margin-right: 4px

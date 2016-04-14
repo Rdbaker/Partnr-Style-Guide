@@ -94,7 +94,40 @@ body
 
             div.pn-docs-example.docs-example-connection-request
               include ./components/connection-request.jade
+              
+              
+        div.pn-docs-section.container-fluid
+          div.pn-docs-section-header
+            h1.page-header.group#skills-categories Skills and Categories
+  
 
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Categories
+              span.text-muted These are the icons the user will see to indicate a category of skills.
+
+            div.pn-docs-example.docs-example-categories
+              div.pn-docs-example
+                div.pn-docs-example-header
+                  h3 Category Icon (circle)
+                  span.text-muted These are circle category icons
+                include ./components/skills/cat-circle.jade
+
+            div.pn-docs-example.docs-example-categories
+              div.pn-docs-example
+                div.pn-docs-example-header
+                  h3 Category Icon (hexagon)
+                  span.text-muted These are hexagonal category icons
+                include ./components/skills/cat-hex.jade
+
+
+          div.pn-docs-subsection
+            div.pn-docs-subsection-header
+              h2 Skills
+              span.text-muted These are the icons the user will see to indicate a skill tag.
+
+            div.pn-docs-example.docs-example-skills
+              include ./components/skills/skills.jade
 
 
         div.pn-docs-section.container-fluid
