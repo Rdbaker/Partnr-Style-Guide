@@ -18,7 +18,12 @@ body
               a(href="#activity-feed") Activity Feed
             li
               a(href="#connection-request") Connection Request
-
+            li
+              a(href="#skills-categories") Skills and Categories
+            li
+              a(href="#progress-cards") Project Progress Cards
+            li
+              a(href="#user-card") User Profile Card
 
       div.col-xs-9
         div.pn-docs-section.container-fluid
@@ -151,5 +156,11 @@ body
 
             div.pn-docs-example.docs-example-task-card
               include ./components/task-card.jade
-
+              
+              
+              
+        div.pn-docs-section.container-fluid
+          div.pn-docs-section-header
+            h1.page-header.group#user-card User Profile Card
+  
   script(src="/js/test.js")

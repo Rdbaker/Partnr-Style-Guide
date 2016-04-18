@@ -2,78 +2,78 @@
 @import '../variables/colors'
 @import '../mixins'
 
-.pn__btn-primary
-  @include button-variant(white, $pn__accent-color, $pn__accent-border)
+.pn-btn-primary
+  @include button-variant(white, $pn-accent-color, $pn-accent-border)
   @extend .btn
 
-.pn__btn-warning
-  @include button-variant(white, $pn__warning-yellow, $pn__warning-yellow-border)
+.pn-btn-warning
+  @include button-variant(white, $pn-warning-yellow, $pn-warning-yellow-border)
   @extend .btn
 
-.pn__btn-danger,
-.pn__btn-error
-  @include button-variant(white, $pn__error-red, $pn__error-red-border)
+.pn-btn-danger,
+.pn-btn-error
+  @include button-variant(white, $pn-error-red, $pn-error-red-border)
   @extend .btn
 
-.pn__btn-success
-  @include button-variant(white, $pn__success-green, $pn__success-green-border)
+.pn-btn-success
+  @include button-variant(white, $pn-success-green, $pn-success-green-border)
   @extend .btn
 
-.pn__btn-info
-  @include button-variant(white, $pn__secondary-blue, $pn__secondary-blue-border)
+.pn-btn-info
+  @include button-variant(white, $pn-secondary-blue, $pn-secondary-blue-border)
   @extend .btn
 
-.pn__skill-btn
-  @include button-variant(white, $pn__highlight-blue, darken($pn__highlight-blue, 10%))
+.pn-skill-btn
+  @include button-variant(white, $pn-highlight-blue, darken($pn-highlight-blue, 10%))
   @extend .btn
   @extend .btn-sm
 
 
-.pn__conreq-btn-connect
-  @extend .pn__btn-success
+.pn-conreq-btn-connect
+  @extend .pn-btn-success
   min-width: 40px
   &:before
     @include icon(plus)
     margin-left: -3px
 
-.pn__conreq-btn-connected
-  @extend .pn__btn-info
+.pn-conreq-btn-connected
+  @extend .pn-btn-info
   min-width: 40px
   &:before
     @include icon(check)
 
-.pn__conreq-btn-requested
-  @extend .pn__btn-warning
+.pn-conreq-btn-requested
+  @extend .pn-btn-warning
   min-width: 40px
   &:before
     @include icon(arrow-right)
 
-.pn__conreq-btn-respond
-  @extend .pn__btn-primary
+.pn-conreq-btn-respond
+  @extend .pn-btn-primary
   min-width: 40px
   &:before
     @include icon(envelope-o)
 
-.pn__conreq-accept
-  @extend .pn__btn-success
+.pn-conreq-accept
+  @extend .pn-btn-success
   min-width: 40px
   &:before
     @include icon(check)
 
-.pn__conreq-decline
-  @extend .pn__btn-danger
+.pn-conreq-decline
+  @extend .pn-btn-danger
   min-width: 40px
   &:before
     @include icon(times)
 
-.pn__edit-btn
-  @extend .pn__btn-primary
+.pn-edit-btn
+  @extend .pn-btn-primary
   min-width: 40px
   font-size: 16px
   &:before
     @include icon(pencil)
 
-.pn__conreq-btn-group-popover
+.pn-conreq-btn-group-popover
   text-align: center
 
   .btn

@@ -1,12 +1,12 @@
 @import '../mixins'
 @import '../variables/colors'
 
-.pn__activity-feed
+.pn-activity-feed
   position: relative
   padding: 2em 0
   margin-top: 2em
   margin-bottom: 2em
-  color: $pn__text-grey-dark
+  color: $pn-text-grey-dark
 
   &::before
     /* this is the vertical line */
@@ -19,12 +19,12 @@
     background: #d7e4ed
     z-index: -1
 
-  .pn__activity-block
+  .pn-activity-block
     margin-bottom: 50px
 
-    .pn__activity-user,
-    .pn__activity-date,
-    .pn__activity-text
+    .pn-activity-user,
+    .pn-activity-date,
+    .pn-activity-text
       @extend .vcenter-row
       padding-top: 5px
       padding-bottom: 5px
@@ -32,23 +32,23 @@
       padding-right: 3px
       display: inline
 
-      .pn__activity-username,
-      .pn__activity-content
+      .pn-activity-username,
+      .pn-activity-content
         display: inline
         &::before
           content: "   "
 
-    .pn__activity-user
+    .pn-activity-user
       @extend .ellipsis-overflow-row
 
-    .pn__activity-text
+    .pn-activity-text
       @extend .ellipsis-overflow-row
 
-    .pn__img-partnr
+    .pn-img-partnr
       background: none
       border: none
 
-    .pn__activity-date
+    .pn-activity-date
       min-width: 50px
       max-width: 53px
       padding-right: 18px
