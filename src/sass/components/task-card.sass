@@ -2,52 +2,55 @@
 @import '../classes/card'
 @import '../mixins'
 
-.pn__task-card
-  @extend .pn__ui-card
+.pn-task-card
+  @extend .pn-ui-card
 
-  .pn__task-card-title
+  .pn-task-card-title
     font-weight: 500
-    font-size: $pn__font-lg
-  .pn__task-due
+    font-size: $pn-font-lg
+  .pn-task-due
     color: #777
     &::before
       @include icon(calendar)
       margin-right: 4px
 
-  .pn__task-due,
-  .pn__task-card-title,
-  .pn__edit-btn
+  .pn-task-due,
+  .pn-task-card-title,
+  .pn-edit-btn
     display: inline-block
 
-  .pn__task-card-detail-group
+  .pn-task-card-detail-group
     margin-top: 15px
 
-    .pn__task-description
+    .pn-task-description
       margin-top: 10px
       @include line-clamp(3)
 
-  .pn__task-card-title-group
-    .pn__edit-btn
+  .pn-task-card-title-group
+    .pn-edit-btn
       float: right
 
-  .pn__task-card-icon-group
+  .pn-task-card-icon-group
     @include column-count(2)
     margin-top: 15px
-    .pn__task-users,
-    .pn__task-categories,
-    .pn__task-skills
+    .pn-task-users,
+    .pn-task-categories,
+    .pn-task-skills
       display: inline-block
 
-    .pn__column-group
+    .pn-column-group
       text-align: right
 
-    .pn__task-users
+    .pn-task-users
       display: inline-block
-      max-width: 130px
+      width: 130px
       max-height: 130px
-      .pn__img-partnr
+      min-height: 80px
+      .pn-img-partnr
         display: initial
+        img
+          width: 60px
 
-    .pn__skills-container
-      .pn__skill-tag
+    .pn-skills-container
+      .pn-skill-tag
         margin-bottom: 0

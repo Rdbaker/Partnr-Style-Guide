@@ -7,20 +7,20 @@
 @import '../classes/card'
 @import '../mixins'
 
-.pn__milestone-card
-  @extend .pn__ui-card
+.pn-milestone-card
+  @extend .pn-ui-card
 
-  .pn__milestone-card-title
+  .pn-milestone-card-title
     font-weight: 500
-    font-size: $pn__font-lg
-  .pn__milestone-card-progress
+    font-size: $pn-font-lg
+  .pn-milestone-card-progress
     @extend .progress
-  .pn__milestone-due
+  .pn-milestone-due
     color: #777
     &::before
       @include icon(calendar)
       margin-right: 4px
-  .pn__milestone-task-count
+  .pn-milestone-task-count
     float: right
     color: #999999
     cursor: pointer
@@ -33,14 +33,14 @@
       @include icon(tasks)
       margin-left: 4px
 
-  .pn__milestone-due,
-  .pn__milestone-task-count,
-  .pn__milestone-card-title,
-  .pn__edit-btn
+  .pn-milestone-due,
+  .pn-milestone-task-count,
+  .pn-milestone-card-title,
+  .pn-edit-btn
     display: inline
 
-  .pn__milestone-card-title-group
+  .pn-milestone-card-title-group
     margin-bottom: 20px
 
-    .pn__edit-btn
+    .pn-edit-btn
       float: right
