@@ -2,6 +2,10 @@
 @import '../variables/colors'
 @import '../mixins'
 
+.pn-btn-default
+  @include button-variant($pn-text-grey-dark, $pn-primary-bg, darken($pn-primary-bg, 10%))
+  @extend .btn
+
 .pn-btn-primary
   @include button-variant(white, $pn-accent-color, $pn-accent-border)
   @extend .btn
@@ -80,3 +84,10 @@
     margin: 5px
     margin-left: 10px
     margin-right: 10px
+
+.pn-btn-search
+  @extend .pn-btn-info
+  min-width: 40px
+  font-size: 16px
+  &:before
+    @include icon(search)
