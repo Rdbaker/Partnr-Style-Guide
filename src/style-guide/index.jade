@@ -24,6 +24,8 @@ body
               a(href="#progress-cards") Project Progress Cards
             li
               a(href="#user-card") User Profile Card
+            li
+              a(href="#search-bar") Search Bar
 
       div.col-xs-9
         div.pn-docs-section.container-fluid
@@ -162,5 +164,19 @@ body
         div.pn-docs-section.container-fluid
           div.pn-docs-section-header
             h1.page-header.group#user-card User Profile Card
+            span.text-muted This is the card that will be displayed when a user is searched for
+
+          div.pn-docs-example.docs-example-user-card
+            include ./components/user-card.jade
+
+
+        div.pn-docs-section.container-fluid
+          div.pn-docs-section-header
+            h1.page-header.group#search-bar Search Bar
+            span.text-muted This is the bar that will be displayed over a searchable area
+
+          div.pn-docs-example.docs-example-search-bar
+            include ./components/search-bar.jade
+
   
   script(src="/js/test.js")

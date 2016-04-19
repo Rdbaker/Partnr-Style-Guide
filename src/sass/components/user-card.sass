@@ -1,0 +1,93 @@
+@import '../classes/card'
+@import '../variables/partnr'
+@import '../mixins'
+
+.pn-user-card
+  @extend .pn-ui-card
+  padding-bottom: 0
+  padding-left: 0
+  padding-right: 0
+  width: 325px
+  text-align: center
+  .pn-user-card-top-row
+    border-bottom: 2px solid lighten($pn-primary-bg-shadow, 10%)
+    font-size: 20px
+    padding-bottom: 15px
+
+    .pn-user-card-image
+      .pn-img-partnr
+        border: 0
+        margin: 0
+
+      .pn-img-partnr,
+      img
+        width: 85px
+        height: 85px
+
+    .pn-user-card-name
+      margin-top: 7px
+      cursor: pointer
+      display: inline-block
+      &:hover
+        text-decoration: underline
+
+    .pn-user-card-position
+      color: $pn-primary-yellow
+      font-size: $pn-font-sm
+      &::before
+        @include icon(briefcase)
+        padding-right: 4px
+      div
+        display: block
+
+  .pn-user-card-mid-row
+    border-bottom: 2px solid lighten($pn-primary-bg-shadow, 10%)
+    text-align: left
+    font-size: 14px
+    padding-top: 10px
+    padding-bottom: 10px
+
+    .pn-user-card-location
+      margin-left: 7px
+      cursor: pointer
+      display: inline
+      color: $pn-primary-yellow
+
+      &::before
+        @include icon(location-arrow)
+        padding-right: 4px
+
+      &:hover
+        font-weight: 500
+
+    .pn-user-card-projects
+      margin-right: 7px
+      display: inline
+      float: right
+      cursor: pointer
+      color: $pn-primary-yellow
+      &::after
+        @include icon(gears)
+        padding-left: 4px
+
+      &:hover
+        font-weight: 500
+
+
+  .pn-user-card-bottom-row
+    background-color: white
+    padding-top: 10px
+    padding-bottom: 5px
+    text-align: center
+    border-bottom: 2px solid lighten($pn-primary-bg-shadow, 10%)
+
+    .pn-cat-circle
+      display: inline-block
+
+    .pn-user-card-category-secondary
+      .pn-cat-circle
+        vertical-align: bottom
+
+  .pn-user-card-footer
+    display: inline-block
+    margin: 5px
