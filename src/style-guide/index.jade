@@ -26,6 +26,8 @@ body
               a(href="#user-card") User Profile Card
             li
               a(href="#search-bar") Search Bar
+            li
+              a(href="#role-card") Role Card
 
       div.col-xs-9
         div.pn-docs-section.container-fluid
@@ -101,12 +103,12 @@ body
 
             div.pn-docs-example.docs-example-connection-request
               include ./components/connection-request.jade
-              
-              
+
+
         div.pn-docs-section.container-fluid
           div.pn-docs-section-header
             h1.page-header.group#skills-categories Skills and Categories
-  
+
 
           div.pn-docs-subsection
             div.pn-docs-subsection-header
@@ -140,8 +142,8 @@ body
         div.pn-docs-section.container-fluid
           div.pn-docs-section-header
             h1.page-header.group#progress-cards Project Progress Cards
-            
-            
+
+
           div.pn-docs-subsection
             div.pn-docs-subsection-header
               h2 Milestone Card
@@ -158,9 +160,9 @@ body
 
             div.pn-docs-example.docs-example-task-card
               include ./components/task-card.jade
-              
-              
-              
+
+
+
         div.pn-docs-section.container-fluid
           div.pn-docs-section-header
             h1.page-header.group#user-card User Profile Card
@@ -178,5 +180,15 @@ body
           div.pn-docs-example.docs-example-search-bar
             include ./components/search-bar.jade
 
-  
+
+
+        div.pn-docs-section.container-fluid
+          div.pn-docs-section-header
+            h1.page-header.group#role-card Role Card
+            span.text-muted This is the card that will be displayed for a role
+
+          div.pn-docs-example.docs-example-role-card
+            include ./components/role-card.jade
+
+
   script(src="/js/test.js")
