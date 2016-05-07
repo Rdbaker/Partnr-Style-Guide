@@ -4,9 +4,9 @@
 
 .pn-user-card
   @extend .pn-ui-card
-  padding-bottom: 0
-  padding-left: 0
-  padding-right: 0
+  padding-bottom: 0 !important
+  padding-left: 0 !important
+  padding-right: 0 !important
   width: 325px
   text-align: center
   .pn-user-card-top-row
@@ -85,11 +85,14 @@
     text-align: center
     border-bottom: 2px solid lighten($pn-primary-bg-shadow, 10%)
 
+    .pn-cat-circle-sm
+      display: inline-block
     .pn-cat-circle
       display: inline-block
 
+
     .pn-user-card-category-secondary
-      .pn-cat-circle
+      .pn-cat-circle-sm
         vertical-align: bottom
 
   .pn-user-card-footer
