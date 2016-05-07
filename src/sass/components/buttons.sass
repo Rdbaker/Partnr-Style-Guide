@@ -28,9 +28,9 @@
   @extend .btn
 
 .pn-skill-btn
-  @include button-variant(white, $pn-highlight-blue, darken($pn-highlight-blue, 10%))
-  @extend .btn
   @extend .btn-sm !optional
+  &:hover
+    color: white
 
 
 .pn-conreq-btn-connect
