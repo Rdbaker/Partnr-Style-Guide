@@ -2,53 +2,53 @@
 @import '../variables/colors'
 
 .pn-activity-feed
-  position: relative
-  padding: 2em 0
-  margin-top: 2em
-  margin-bottom: 2em
   color: $pn-text-grey-dark
+
+.row-eq-height 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+.pn-activity-date
+  text-align: right;
+  -webkit-align-self: center;
+  align-self: center
+
+.pn-feed-img-partnr 
+  padding: 0 15px;
+  display: inline-block;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  display: flex;
 
   &::before
     /* this is the vertical line */
     content: ''
     position: absolute
     top: 0
-    left: 84px
+    left: 35px
     height: 100%
     width: 4px
     background: #d7e4ed
     z-index: -1
 
-  .pn-activity-block
-    margin-bottom: 50px
+  img 
+    width: 44px;
+    height: 44px;
+    -webkit-align-self: center;
+    align-self: center
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .pn-activity-user,
-    .pn-activity-date,
-    .pn-activity-text
-      @extend .vcenter-row
-      padding-top: 5px
-      padding-bottom: 5px
-      padding-left: 3px
-      padding-right: 3px
-      display: inline
+.pn-activity-text
+    padding-top: 20px
+    padding-bottom: 20px
 
-      .pn-activity-username,
-      .pn-activity-content
-        display: inline
-        &::before
-          content: "   "
 
-    .pn-activity-user
-      @extend .ellipsis-overflow-row
-
-    .pn-activity-text
-      @extend .ellipsis-overflow-row
-
-    .pn-img-partnr
-      background: none
-      border: none
-
-    .pn-activity-date
-      min-width: 50px
-      max-width: 53px
-      padding-right: 18px
+ 
