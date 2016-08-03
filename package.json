@@ -1,6 +1,6 @@
 {
   "name": "partnr-style-guide",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "Partnr's style for web components",
   "scripts": {
     "start": "./node_modules/.bin/gulp heroku:production",
